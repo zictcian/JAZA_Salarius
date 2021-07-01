@@ -35,7 +35,7 @@ class Profile extends StatelessWidget {
                           ),
                         )
                       ]),
-                  height: 280,
+                  height: 290,
                   width: MediaQuery.of(context).size.width,
                   child: Center(
                       child: Column(
@@ -60,7 +60,7 @@ class Profile extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.only(right: 18.0),
                             child: Icon(
-                              Icons.person,
+                              Icons.add,
                               size: 18,
                               color: Colors.grey[600],
                             ),
@@ -78,18 +78,25 @@ class Profile extends StatelessWidget {
                         height: MediaQuery.of(context).size.height / 70,
                       ),
                       Text(
-                        'Jack Sparrow',
+                        'Jose Erick',
                         style: GoogleFonts.cinzel(
                             color: Colors.grey[900],
                             fontSize: 20,
                             fontWeight: FontWeight.normal),
                       ),
                       Text(
-                        'UI/UX Designer',
+                        'Desarrollador',
                         style: GoogleFonts.lato(
                             color: Colors.grey[500],
                             fontSize: 13,
                             fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        '\$485',
+                        style: GoogleFonts.cinzel(
+                            color: Colors.grey[900],
+                            fontSize: 20,
+                            fontWeight: FontWeight.normal),
                       ),
                       SizedBox(
                         height: 27,
@@ -126,7 +133,7 @@ class Profile extends StatelessWidget {
                                   padding: const EdgeInsets.only(
                                       left: 22, right: 22, top: 12, bottom: 12),
                                   child: Text(
-                                    'Recent Transactions',
+                                    'Transacciones recientes',
                                     style: GoogleFonts.lato(
                                         color: Colors.white,
                                         letterSpacing: 1,
@@ -150,7 +157,7 @@ class Profile extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 22.0),
                   child: Text(
-                    'Overview',
+                    'Vista General',
                     style: GoogleFonts.cinzel(
                         color: Colors.grey[700],
                         fontSize: 20,
@@ -160,7 +167,7 @@ class Profile extends StatelessWidget {
                 Padding(
                     padding: const EdgeInsets.only(right: 22.0),
                     child: Text(
-                      'May 13, 2020',
+                      'Jun 2021',
                       style: GoogleFonts.lato(
                           color: Colors.grey[600],
                           fontSize: 13,
@@ -210,7 +217,7 @@ class Profile extends StatelessWidget {
                   title: Row(
                     children: [
                       Text(
-                        'Sent',
+                        'Gasto',
                         style: GoogleFonts.cinzel(
                             color: Colors.black,
                             letterSpacing: 0,
@@ -219,9 +226,9 @@ class Profile extends StatelessWidget {
                       ),
                     ],
                   ),
-                  subtitle: Text('Payment to Rose'),
+                  subtitle: Text('Doritos'),
                   trailing: Text(
-                    '\$200',
+                    '\$15',
                     style: GoogleFonts.cinzel(
                         color: Colors.black,
                         letterSpacing: 0,
@@ -273,7 +280,7 @@ class Profile extends StatelessWidget {
                   title: Row(
                     children: [
                       Text(
-                        'Received',
+                        'Ingreso',
                         style: GoogleFonts.cinzel(
                             color: Colors.black,
                             letterSpacing: 0,
@@ -282,7 +289,7 @@ class Profile extends StatelessWidget {
                       ),
                     ],
                   ),
-                  subtitle: Text('Payment to Rose'),
+                  subtitle: Text('Pago app salarius'),
                   trailing: Text(
                     '\$200',
                     style: GoogleFonts.cinzel(
@@ -337,7 +344,7 @@ class Profile extends StatelessWidget {
                   title: Row(
                     children: [
                       Text(
-                        'Sent',
+                        'Gasto',
                         style: GoogleFonts.cinzel(
                             color: Colors.black,
                             letterSpacing: 0,
@@ -346,7 +353,7 @@ class Profile extends StatelessWidget {
                       ),
                     ],
                   ),
-                  subtitle: Text('Payment to Rose'),
+                  subtitle: Text('Mouse'),
                   trailing: Text(
                     '\$200',
                     style: GoogleFonts.cinzel(
@@ -400,7 +407,7 @@ class Profile extends StatelessWidget {
                   title: Row(
                     children: [
                       Text(
-                        'Received',
+                        'Ingreso',
                         style: GoogleFonts.cinzel(
                             color: Colors.black,
                             letterSpacing: 0,
@@ -409,9 +416,9 @@ class Profile extends StatelessWidget {
                       ),
                     ],
                   ),
-                  subtitle: Text('Payment to Rose'),
+                  subtitle: Text('Pago de desarrollo'),
                   trailing: Text(
-                    '\$200',
+                    '\$500',
                     style: GoogleFonts.cinzel(
                         color: Colors.black,
                         letterSpacing: 0,

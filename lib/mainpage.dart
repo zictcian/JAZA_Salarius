@@ -96,12 +96,12 @@ class MainPage extends StatelessWidget {
               ),
               Container(
                   decoration: new BoxDecoration(
-                    color: Colors.pink,
+                    color: Colors.blue[800],
                     borderRadius: BorderRadius.circular(40),
                     boxShadow: [
                       //background color of box
                       BoxShadow(
-                        color: Colors.pink[400],
+                        color: Colors.blue[400],
                         blurRadius: 10.0, // soften the shadow
                         spreadRadius: 1.0, //extend the shadow
                         offset: Offset(
@@ -134,7 +134,7 @@ class MainPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Text(
-                    'Register',
+                    'Registro',
                     style: GoogleFonts.lato(
                         color: Colors.grey[600],
                         fontSize: 15,
@@ -169,10 +169,6 @@ class MainPage extends StatelessWidget {
               SizedBox(
                 height: MediaQuery.of(context).size.height / 16,
               ),
-              Image.network(
-                'https://cdn.onlinewebfonts.com/svg/img_432272.png',
-                height: 60,
-              )
             ],
           ),
         ));

@@ -39,22 +39,13 @@ class Recent extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 22.0),
                   child: Text(
-                    'Recent',
+                    'Reciente',
                     style: GoogleFonts.cinzel(
                         color: Colors.grey[700],
                         fontSize: 20,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
-                Padding(
-                    padding: const EdgeInsets.only(right: 22.0),
-                    child: Text(
-                      'See All',
-                      style: GoogleFonts.lato(
-                          color: Colors.grey[700],
-                          fontSize: 14,
-                          fontWeight: FontWeight.normal),
-                    )),
               ],
             ),
             SizedBox(height: 30),
@@ -78,7 +69,7 @@ class Recent extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                'All',
+                                'TODO',
                                 style: GoogleFonts.lato(
                                     color: Colors.white,
                                     fontSize: 13,
@@ -106,7 +97,7 @@ class Recent extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                'Expenses',
+                                'GASTOS',
                                 style: GoogleFonts.lato(
                                     color: Colors.grey[600],
                                     fontSize: 12,
@@ -134,7 +125,7 @@ class Recent extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                'Funds',
+                                'INGRESOS',
                                 style: GoogleFonts.lato(
                                     color: Colors.grey[600],
                                     fontSize: 12,
@@ -155,7 +146,7 @@ class Recent extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 22.0),
                   child: Text(
-                    'TODAY',
+                    'HOY',
                     style: GoogleFonts.lato(
                         color: Colors.grey[900],
                         fontSize: 16,
@@ -198,14 +189,14 @@ class Recent extends StatelessWidget {
                         topRight: const Radius.circular(5.0),
                       ),
                       image: DecorationImage(
-                        image: AssetImage('images/recieved.png'),
+                        image: NetworkImage('https://img.icons8.com/ios/452/sent.png'),
                       ),
                     ),
                   ),
                   title: Row(
                     children: [
                       Text(
-                        'Received',
+                        'Gasto',
                         style: GoogleFonts.cinzel(
                             color: Colors.black,
                             letterSpacing: 0,
@@ -214,9 +205,9 @@ class Recent extends StatelessWidget {
                       ),
                     ],
                   ),
-                  subtitle: Text('Payment to Rose'),
+                  subtitle: Text('Doritos'),
                   trailing: Text(
-                    '\$200',
+                    '\$15',
                     style: GoogleFonts.cinzel(
                         color: Colors.black,
                         letterSpacing: 0,
@@ -229,56 +220,6 @@ class Recent extends StatelessWidget {
             ),
             SizedBox(
               height: 40,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 22.0),
-                  child: Text(
-                    'PAYMENT CIRCLE',
-                    style: GoogleFonts.lato(
-                        color: Colors.grey[900],
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
-              ],
-            ),
-            Center(
-              child: CircleList(
-                origin: Offset(0, 0),
-                centerWidget: Material(
-                  elevation: 20,
-                  borderRadius: BorderRadius.circular(100),
-                  child: Image.network(
-                    "https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png",
-                    height: 150,
-                    // controller: myController,
-                  ),
-                ),
-                children: List.generate(6, (index) {
-                  return Material(
-                    elevation: 10,
-                    borderRadius: BorderRadius.circular(100),
-                    child: Padding(
-                      padding: const EdgeInsets.all(4.0),
-                      child: ClipRRect(
-                          borderRadius: BorderRadius.all(Radius.circular(50)),
-                          child: Container(
-                              color: Colors.blue,
-                              width: 50,
-                              height: 50,
-                              child: Image.asset("images/${index + 1}.png"))),
-                    ),
-                  );
-                }),
-                onDragUpdate: (update) {
-                  Offset point =
-                      Offset(update.point.dx * 2, update.point.dy * 2);
-                  //  myController.lookAt(point);
-                },
-              ),
             ),
           ],
         ),
