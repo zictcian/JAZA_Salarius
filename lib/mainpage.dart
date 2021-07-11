@@ -1,5 +1,6 @@
 import 'package:dotted_line/dotted_line.dart';
 import 'package:finance/profile.dart';
+import 'package:finance/register.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -133,12 +134,14 @@ class MainPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Text(
-                    'Registro',
-                    style: GoogleFonts.lato(
-                        color: Colors.grey[600],
-                        fontSize: 15,
-                        fontWeight: FontWeight.normal),
+                  FlatButton(
+                    onPressed: () {
+                      //var route = new MaterialPageRoute(
+                      //builder: (BuildContext context) => new Register(),
+                      //);
+                      //Navigator.of(context).push(route);
+                    },
+                    child: new Text("Tap Here"),
                   ),
                   Text(
                     'Forgot Password?',

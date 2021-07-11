@@ -1,3 +1,4 @@
+import 'package:finance/banking.dart';
 import 'package:finance/recent.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -59,12 +60,25 @@ class Profile extends StatelessWidget {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(right: 18.0),
-                            child: Icon(
-                              Icons.add,
-                              size: 18,
-                              color: Colors.grey[600],
+                            child: ClipOval(
+                              child: Material(
+                                color: Colors.blue,
+                                child: InkWell(
+                                  splashColor: Colors.red, // Splash color
+                                  onTap: () {
+                                    var route = new MaterialPageRoute(
+                                    builder: (BuildContext context) => new Banking());
+                                    Navigator.of(context).push(route);
+                                  },
+                                  child: Icon(
+                                    Icons.add,
+                                    color: Colors.white,
+                                    size: 25,
+                                  ),
+                                  ),
+                                ),
+                              ),
                             ),
-                          ),
                         ],
                       ),
                       SizedBox(
@@ -131,7 +145,7 @@ class Profile extends StatelessWidget {
                                 ),
                                 child: Padding(
                                   padding: const EdgeInsets.only(
-                                      left: 22, right: 22, top: 12, bottom: 12),
+                                      left: 22, right: 22, top: 5, bottom: 12),
                                   child: Text(
                                     'Transacciones recientes',
                                     style: GoogleFonts.lato(
